@@ -2,7 +2,11 @@
 
 ## Instructions on running
 
-Clone this repo and use android studio (https://developer.android.com/studio) to download an emulator and run the app. You can also find a video demo at the bottom of this readme.
+1) Clone the repo using ```git clone```.
+2) cd into the folder using a terminal/powershell and type ```npm install``` or ```yarn install``` to install all dependencies.
+3) now run ```expo start``` which will result in a new browser window to open with expo running in it. You can now choose the various options to run the app.
+
+Note: If you have access to an android emulator, you can run the app on it by first running the emulator and then clicking "run on android emulator" option in the expo browser.
 
 
 ## Description
