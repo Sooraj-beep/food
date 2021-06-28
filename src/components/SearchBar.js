@@ -10,7 +10,7 @@ const SearchBar = ({term, onTermChange, onTermSubmit}) => {
                 autoCapitalize="none"
                 autoCorrect={false}
                 style = {styles.inputStyle}
-                placeholder="Search"
+                placeholder="Search: Food item, Location"
                 value = {term}
                 onChangeText={newTerm => onTermChange(newTerm)}
                 onEndEditing={()=> onTermSubmit()}

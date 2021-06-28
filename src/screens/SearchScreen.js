@@ -21,7 +21,14 @@ const SearchScreen = () => {
             <SearchBar 
                 term = {term} 
                 onTermChange={newTerm => setTerm(newTerm)} 
-                onTermSubmit={() => searchApi(term)}
+                onTermSubmit={() => {
+                    console.log(term);
+                    if (term.includes(',')){
+                        searchApi({food: term.split(',')[0], location: term.split(',')[1]});
+                    } else {
+                        searchApi({food: term, location: 'edmonton'});
+                    }
+                }}
             />
             {errorMessage ? <Text>{errorMessage}</Text> : null}  
             <ScrollView>
